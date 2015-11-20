@@ -51,7 +51,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm7uQAOYvS4oYWd5UFUeZPobo28QWBE/ACK7x
 	  	$json = $api->registerCard(
 		  	$screen_name,
 		  	"테스트카드",
-		  	"5424160189423774",
+		  	"5424160189XXXXXX",
 		  	"202007",
 		  	"09",
 		  	"800616",
