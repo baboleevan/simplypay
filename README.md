@@ -5,5 +5,4 @@ Simply Pay
 API 연동 샘플입니다.
 
 
-https://www.simplypay.kr
-https://www.simplypay.co.kr
+PHP 5.3 이상에서 개발되었습니다.
