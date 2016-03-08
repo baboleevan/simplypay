@@ -235,7 +235,7 @@ public class SimplyPayUtil {
 	
 		    MultipartEntity mpEntity = new MultipartEntity();
 			for (Entry<String,Object> e : Params.entrySet()){
-				mpEntity.addPart(e.getKey(),new StringBody(e.getValue().toString()));	
+				mpEntity.addPart(e.getKey(),new StringBody(e.getValue().toString(),Charset.forName("UTF-8")));	
 			}
 		    httppost.setEntity(mpEntity);
 		    httpclient = wrapClient(httpclient);
