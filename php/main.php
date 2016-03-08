@@ -15,7 +15,8 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm7uQAOYvS4oYWd5UFUeZPobo28QWBE/ACK7x
 	$screen_name = "test";
 	
 	$api = new SimplyPayAPI($realm,$rsaKey);
-	$api->setDevServer();
+	//$api->setDevServer();
+	$api->setRealServer();
 	
 	try {
 		
@@ -46,7 +47,8 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm7uQAOYvS4oYWd5UFUeZPobo28QWBE/ACK7x
 	  	if ($has_error) exit(0);
 	  	
 	  	$api = new SimplyPayAPI($realm,$rsaKey,$vAesKey,$vToken);
-	  	$api->setDevServer();
+	  	//$api->setDevServer();
+	  	$api->setRealServer();
 	  	
 	  	$json = $api->registerCard(
 		  	$screen_name,
