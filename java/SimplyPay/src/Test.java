@@ -26,8 +26,8 @@ public class Test {
 		try {
 			apiClient = 
 					new SimplyPayAPI(realm,rsaPublicKey);
-			apiClient.setDevServer(); //개발 서버로 테스트시 ..
-			//apiClient.setRealServer(); //실서버로 테스트시 ..
+			//apiClient.setDevServer(); //개발 서버로 테스트시 ..
+			apiClient.setRealServer(); //실서버로 테스트시 ..
 			
 			apiClient.createSession(testUserId);
 		}catch(SimplyPayException e) {
@@ -52,8 +52,8 @@ public class Test {
 							aesKey,
 							token
 							);
-			apiClient.setDevServer(); //개발 서버로 테스트시 ..
-			//apiClient.setRealServer(); //실서버로 테스트시 ..
+			//apiClient.setDevServer(); //개발 서버로 테스트시 ..
+			apiClient.setRealServer(); //실서버로 테스트시 ..
 			retValue = apiClient.registerCard(testUserId, 
 					"테스트카드", 
 					"944003805741XXXX" /*카드번호필요*/, 
